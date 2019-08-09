@@ -1,0 +1,91 @@
+[00:00:17] [User Authenticator #1/INFO]: UUID of player LateRooster is 4ea44928-c17e-44f8-9a45-60819d618707
+[00:00:17] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to TabList v1.0
+org.bukkit.event.EventException: null
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:320) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:529) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:514) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.PlayerList.a(PlayerList.java:173) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.LoginListener.c(LoginListener.java:154) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.LoginListener.tick(LoginListener.java:53) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.NetworkManager.a(NetworkManager.java:220) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.ServerConnection.c(ServerConnection.java:119) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.b(MinecraftServer.java:1092) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.b(DedicatedServer.java:396) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.a(MinecraftServer.java:971) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:816) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/server/v1_8_R3/Packet
+	at fr.maygo.tablist.listener.PlayerJoin.onPlayerJoin(PlayerJoin.java:16) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_201]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:316) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_8_R3.Packet
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:81) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_201]
+	at fr.maygo.tablist.listener.PlayerJoin.onPlayerJoin(PlayerJoin.java:16) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_201]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:316) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	... 13 more
+[00:00:17] [Server thread/INFO]: LateRooster[/127.0.0.1:57294] logged in with entity id 141 at ([world]3498.3859906824678, 70.11650136792812, 6093.350119797736)
+[00:00:18] [Server thread/WARN]: [Essentials] Task #39 for Essentials v2.17.0.0 generated an exception
+java.lang.NullPointerException: null
+	at com.earth2me.essentials.xmpp.XMPPManager.updatePresence(XMPPManager.java:146) ~[?:?]
+	at com.earth2me.essentials.xmpp.EssentialsXMPP.updatePresence(EssentialsXMPP.java:113) ~[?:?]
+	at org.bukkit.craftbukkit.v1_14_R1.scheduler.CraftTask.run(CraftTask.java:81) ~[spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at org.bukkit.craftbukkit.v1_14_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:394) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.b(MinecraftServer.java:1023) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.b(DedicatedServer.java:396) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.a(MinecraftServer.java:971) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:816) [spigot-1.14.4.jar:git-Spigot-9de398a-9c887d4]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[00:01:09] [Server thread/INFO]: Stopping the server
+[00:01:09] [Server thread/INFO]: Stopping server
+[00:01:09] [Server thread/INFO]: [TownyNameUpdater] Disabling TownyNameUpdater v2.0
+[00:01:09] [Server thread/INFO]: [EssentialsXMPP] Disabling EssentialsXMPP v2.17.0.0
+[00:01:09] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.17.0.0
+[00:01:09] [Server thread/INFO]: [CraftBook] Disabling CraftBook v3.10-rc-2;4e5f9b1
+[00:01:09] [Server thread/INFO]: [CraftBook] Saving persistent data to YAML!
+[00:01:09] [Server thread/INFO]: [Towny] Disabling Towny v0.94.0.0
+[00:01:09] [Server thread/INFO]: ==============================================================
+[00:01:09] [Server thread/INFO]: [Towny] Version: 0.94.0.0 - Mod Disabled
+[00:01:09] [Server thread/INFO]: =============================================================
+[00:01:09] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP v2.17.0.0
+[00:01:09] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.17.0.0
+[00:01:09] [Server thread/INFO]: [Essentials] Disabling Essentials v2.17.0.0
+[00:01:09] [Server thread/INFO]: [Vault] [Vault][Economy] Essentials Economy unhooked.
+[00:01:09] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.4.0
+[00:01:09] [Server thread/INFO]: [Vault] Disabling Vault v1.7.2-b107
+[00:01:09] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[00:01:09] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
+[00:01:09] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[00:01:09] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.0.6
+[00:01:09] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[00:01:09] [Server thread/INFO]: [EditableSign] Disabling EditableSign v7.0.1
+[00:01:09] [Server thread/INFO]: [32m[EditableSign] EditableSign version 7.0.1 is Disabled[0m
+[00:01:09] [Server thread/INFO]: [MrCore_BukkitImpl] Disabling MrCore_BukkitImpl v2.0b9
+[00:01:09] [Server thread/INFO]: [MrCore_BukkitImpl] Goodbye
+[00:01:09] [Server thread/INFO]: [TabList] Disabling TabList v1.0
+[00:01:09] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.0.1-SNAPSHOT;78488d9
+[00:01:09] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[00:01:09] [Server thread/INFO]: Saving players
+[00:01:09] [Server thread/INFO]: LateRooster lost connection: Server closed
+[00:01:09] [Server thread/INFO]: LateRooster left the game
+[00:01:10] [Server thread/INFO]: Saving worlds
+[00:01:10] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[00:01:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:01:11] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[00:01:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:01:12] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[00:01:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:01:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:01:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:01:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
